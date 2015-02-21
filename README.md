@@ -7,7 +7,7 @@ A set of utils for interfacing with mail manager
 [![Scrutinizer Code Quality](http://img.shields.io/scrutinizer/g/KyleChamberlin/mail-manager-python-interface.svg)](https://scrutinizer-ci.com/g/KyleChamberlin/mail-manager-python-interface/?branch=master)
 [![PyPI Version](http://img.shields.io/pypi/v/MailManagerPythonInterface.svg)](https://pypi.python.org/pypi/MailManagerPythonInterface)
 [![PyPI Downloads](http://img.shields.io/pypi/dm/MailManagerPythonInterface.svg)](https://pypi.python.org/pypi/MailManagerPythonInterface)
-
+[![Documentation Status](https://readthedocs.org/projects/mail-manager-python-interface/badge/?version=latest)](https://readthedocs.org/projects/mail-manager-python-interface/?badge=latest)
 
 Getting Started
 ===============
@@ -15,12 +15,13 @@ Getting Started
 Requirements
 ------------
 
-* Python 3.3+
+* Python 3.4+
 
 Installation
 ------------
 
 MailManagerPythonInterface can be installed with pip:
+
 
 ```
 $ pip install MailManagerPythonInterface
@@ -45,7 +46,7 @@ $ python
 >>> mailmanager.__version__
 ```
 
-MailManagerPythonInterface doesn't do anything, it's a template.
+MailManagerPythonInterface doesn't currently do anything, it's a template.
 
 For Contributors
 ================
@@ -59,7 +60,6 @@ Requirements
     * Linux: http://www.gnu.org/software/make (likely already installed)
 * virtualenv: https://pypi.python.org/pypi/virtualenv#installation
 * Pandoc: http://johnmacfarlane.net/pandoc/installing.html
-* Graphviz: http://www.graphviz.org/Download.php
 
 Installation
 ------------
