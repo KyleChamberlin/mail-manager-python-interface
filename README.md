@@ -1,6 +1,15 @@
-MailManagerPythonInterface
-======
-A set of utils for interfacing with mail manager
+Mail Manager Python Interface
+=============================
+A set of utils for interfacing with [BCC Mail Manager](http://www.bccsoftware.com/bcc-mail-manager)
+
+The goal of this module is to provide python users with an easy way to interact with BCC Mail
+Manager on Windows. We hope to provide the following functionality:
+
+* Import lists or Dicts into a new or existing mail manager job.
+* Provide a simple YAML base configuration for the mail manager steps.
+* Associate the sorted output from mail manager back to the user's program.
+
+This project is still in the planning stage and as such is not currently usable.
 
 [![Build Status](http://img.shields.io/travis/KyleChamberlin/mail-manager-python-interface/master.svg)](https://travis-ci.org/KyleChamberlin/mail-manager-python-interface)
 [![Coverage Status](http://img.shields.io/coveralls/KyleChamberlin/mail-manager-python-interface/master.svg)](https://coveralls.io/r/KyleChamberlin/mail-manager-python-interface)
@@ -12,6 +21,7 @@ A set of utils for interfacing with mail manager
 Getting Started
 ===============
 
+
 Requirements
 ------------
 
@@ -20,7 +30,7 @@ Requirements
 Installation
 ------------
 
-MailManagerPythonInterface can be installed with pip:
+Mail Manager Python Interface can be installed with pip:
 
 
 ```
@@ -46,10 +56,12 @@ $ python
 >>> mailmanager.__version__
 ```
 
-MailManagerPythonInterface doesn't currently do anything, it's a template.
-
 For Contributors
 ================
+
+Be sure to read the CONTRIBUTING.md document in this repository for further information about how to contribute to this project.
+
+Before you contribute you will also need to sign our CLA which is hosted by CLAHub.
 
 Requirements
 ------------
@@ -64,26 +76,26 @@ Requirements
 Installation
 ------------
 
-Create a virtualenv:
+#### Create a virtualenv:
 
 ```
 $ make env
 ```
 
-Run the tests:
+#### Run the tests:
 
 ```
 $ make test
 $ make tests  # includes integration tests
 ```
 
-Build the documentation:
+#### Build the documentation:
 
 ```
 $ make doc
 ```
 
-Run static analysis:
+#### Run static analysis:
 
 ```
 $ make pep8
@@ -92,9 +104,29 @@ $ make pylint
 $ make check  # includes all checks
 ```
 
-Prepare a release:
+#### Prepare a release:
 
 ```
 $ make dist  # dry run
 $ make upload
 ```
+
+Copyright
+---------
+
+Copyright 2015 Kyle Chamberlin
+
+License
+-------
+
+*Licensed under the __Apache License__, Version __2.0__ (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at*
+
+[Apache.org - Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+
+*Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an __"AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND__, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.*
