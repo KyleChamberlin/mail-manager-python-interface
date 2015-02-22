@@ -35,7 +35,7 @@ else
 endif
 
 # virtualenv paths
-ENV := env
+ENV := .env
 ifneq ($(findstring win32, $(PLATFORM)), )
 	BIN := $(ENV)/Scripts
 	OPEN := cmd /c start
@@ -96,13 +96,13 @@ $(PIP):
 depends: depends-ci depends-dev
 
 .PHONY: depends-ci
-depends-ci: env Makefile $(DEPENDS_CI)
+depends-ci: .env Makefile $(DEPENDS_CI)
 $(DEPENDS_CI): Makefile
 	$(PIP) install --upgrade pep8 pep257 pylint $(TEST_RUNNER) coverage
 	touch $(DEPENDS_CI)  # flag to indicate dependencies are installed
 
 .PHONY: depends-dev
-depends-dev: env Makefile $(DEPENDS_DEV)
+depends-dev: .env Makefile $(DEPENDS_DEV)
 $(DEPENDS_DEV): Makefile
 	$(PIP) install --upgrade pep8radius pygments docutils pdoc wheel
 	touch $(DEPENDS_DEV)  # flag to indicate dependencies are installed
