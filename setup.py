@@ -11,14 +11,14 @@ if os.path.exists('README.md'):
     README = open('README.md').read()
 else:
     README = ""  # a placeholder, readme is generated on release
-CHANGES = open('CHANGES.md').read()
+CHANGES = open('CHANGELOG.md').read()
 
 
 setuptools.setup(
     name=__project__,
     version=__version__,
 
-    description="MailManagerPythonInterface is a Python 3 package template.",
+    description="Mail Manager Python Interface is a Python 3 package template.",
     url='https://github.com/KyleChamberlin/mail-manager-python-interface',
     author='Kyle Chamberlin',
     author_email='KyleChamberlin@project20million.org',
