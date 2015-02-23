@@ -3,7 +3,7 @@ Mail Manager Python Interface
 A set of utils for interfacing with [BCC Mail Manager](http://www.bccsoftware.com/bcc-mail-manager)
 
 The goal of this module is to provide python users with an easy way to interact with BCC Mail
-Manager on Windows. We hope to provide the following functionality:
+Manager on [Windows](https://microsoft.com/windows/). We hope to provide the following functionality:
 
 * Import lists or Dicts into a new or existing mail manager job.
 * Provide a simple YAML base configuration for the mail manager steps.
@@ -59,9 +59,9 @@ $ python
 For Contributors
 ================
 
-Be sure to read the CONTRIBUTING.md document in this repository for further information about how to contribute to this project.
+Be sure to read the [[CONTRIBUTING.md]] document in this repository for further information about how to contribute to this project.
 
-Before you contribute you will also need to sign our CLA which is hosted by CLAHub.
+Before you contribute you will also need to sign our [Contributor License Agreement](CLA.md) which is [hosted on CLAHub](https://www.clahub.com/agreements/KyleChamberlin/mail-manager-python-interface).
 
 Requirements
 ------------
