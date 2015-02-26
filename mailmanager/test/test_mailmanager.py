@@ -1,34 +1,23 @@
 #!/usr/bin/env python
 
-"""Sample test module."""
-
 import unittest
 
-from mailmanager import sample
+from mailmanager.address import Address
+
+
+def sort_addresses(addresses):
+    pass
 
 
 class TestMailmanager(unittest.TestCase):
 
-    """Sample test class."""
+    def sort_addresses_returns_list(self):
+        addresses = []
+        addresses.add(Address(1, "Name", "Company", "Address1", "Address2", "City State Zip"))
+        addresses.add(Address(2, "Name", "Company", "Address1", "Address2", "City State Zip"))
+        
+        sort_addresses(addresses)
+        
 
-    def test_dependency_import(self):
-        """Sample test method for dependencies."""
-        try:
-            import testpackage  # pylint: disable=W0612
-            assert True
-        except ImportError:
-            self.fail("depenency not installed")
 
-    def test_dependency_import_special(self):
-        """Sample test method for special dependencies."""
-        try:
-            import newrelic_plugin_agent  # pylint: disable=W0612
-            assert True
-        except ImportError:
-            self.fail("depenency not installed")
 
-    def test_branch_coverage(self):
-        """Sample test method for branch coverage."""
-        self.assertEquals(sample.function(True), 'True')
-        self.assertEquals(sample.function(False), 'False')
-        self.assertEquals(sample.function(None), 'None')
